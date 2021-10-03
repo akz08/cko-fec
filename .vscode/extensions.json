@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "wallabyjs.wallaby-vscode",
+    "dbaeumer.vscode-eslint",
+    "ms-azuretools.vscode-docker"
+  ]
+}
