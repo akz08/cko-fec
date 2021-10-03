@@ -5,10 +5,20 @@
   --brandLightText: rgb(255, 255, 200);
 }
 
+h1 {
+  font-size: 40px;
+}
+
 #topSection {
   padding: 10px 40px;
   color: var(--brandLightText);
   background-color: var(--brandPrimary);
+}
+
+#topContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
 }
 
 .form-comment {
