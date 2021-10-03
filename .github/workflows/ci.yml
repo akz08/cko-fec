@@ -1,0 +1,40 @@
+name: CI
+
+# trigger on all push/pull_request for development
+#  (ideally use targeted branches to save on costs)
+on:
+  push:
+    paths:
+      - src/**
+  pull_request:
+    paths:
+      - src/**
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - run: npm install -g yarn
+
+      - name: yarn install & build
+        run: |
+          yarn install --frozen-lockfile
+          yarn run build
+
+      - name: Lint via ESLint
+        run: yarn run lint
+
+      - name: Run unit tests
+        run: yarn test
