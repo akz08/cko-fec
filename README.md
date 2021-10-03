@@ -1,3 +1,5 @@
+![](https://github.com/akz08/cko-fec/workflows/CI/badge.svg)
+
 # Front End Challenge (Customer Feedback Page)
 
 Submission for CKO Front End Challenge built in React.js
