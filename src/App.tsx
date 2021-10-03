@@ -16,7 +16,7 @@ function App(): JSX.Element {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React and build cool things!
         </a>
       </header>
     </div>
