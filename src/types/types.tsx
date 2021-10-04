@@ -9,6 +9,14 @@ export type CommentProviderValue = {
   addComment: (comment: IComment) => void;
 };
 
+export type ProductTrendsProviderProps = {
+  children: JSX.Element | JSX.Element[];
+};
+
+export type ProductTrendsProviderValue = {
+  trends: IProductTrends[];
+};
+
 export type CommentProps = {
   comment: IComment;
 };
@@ -35,3 +43,8 @@ export type StarProps = {
   selected?: boolean;
   onSelect?: (prop: unknown) => void;
 };
+
+export interface IProductTrends {
+  date: string; // YYYY-MM-DD (UTC ISO 8601)
+  value: number;
+}

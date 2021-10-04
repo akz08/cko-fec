@@ -65,6 +65,12 @@ h1 {
   background-color: var(--brandSecondary);
 }
 
+.chart-container {
+  position: relative;
+  width: 70vw;
+  margin: auto;
+}
+
 #bottomSection {
   padding: 10px 40px;
   align-content: center;

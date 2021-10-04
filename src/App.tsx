@@ -3,6 +3,7 @@ import './App.css';
 import CommentForm from './components/CommentForm';
 import CommentList from './components/CommentList';
 import TrendGraph from './components/TrendGraph';
+import ProductTrendsProvider from './providers/ProductTrendsProvider';
 
 function App(): JSX.Element {
   return (
@@ -11,7 +12,9 @@ function App(): JSX.Element {
         <h1>Customer Feedback</h1>
         <div id="topContainer">
           <CommentForm />
-          <TrendGraph />
+          <ProductTrendsProvider>
+            <TrendGraph />
+          </ProductTrendsProvider>
         </div>
       </section>
       <section id="bottomSection">
