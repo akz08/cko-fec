@@ -22,12 +22,12 @@ export default function CommentProvider({
   // just add to local state for now
   const addComment = (comment: IComment) => {
     setComments([
-      ...comments,
       {
         ...comment,
         // we would be assigned this in a returning call from a service
         id: v4(),
       },
+      ...comments,
     ]);
   };
 

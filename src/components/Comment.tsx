@@ -8,7 +8,7 @@ export default function Comment(commentProps: CommentProps): JSX.Element {
   return (
     <div className="comment-content">
       <h3 style={{ margin: '5px 0' }}>{poster}</h3>
-      <StarRating readOnly stars={rating} totalStars={5} />
+      <StarRating readOnly selectedStars={rating} totalStars={5} />
       <div>{comment}</div>
     </div>
   );

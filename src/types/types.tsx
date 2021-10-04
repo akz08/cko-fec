@@ -19,14 +19,16 @@ export interface IComment {
   email?: string;
   rating: number;
   comment: string;
+  // date?: string; // YYYY-MM-DD (UTC ISO 8601)
 }
 
 export type StarRatingProps = {
   // eslint-disable-next-line @typescript-eslint/ban-types
   style?: object;
   readOnly?: boolean;
-  stars?: number;
   totalStars: number;
+  selectedStars: number;
+  onRate?: (rating: number) => void;
 };
 
 export type StarProps = {

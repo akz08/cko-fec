@@ -7,14 +7,13 @@ const createArray = (length: number) => [...Array(length)];
 export default function StarRating({
   readOnly = false,
   style = {},
-  stars = 0,
   totalStars,
+  selectedStars = 0,
+  onRate = (f) => f,
 }: StarRatingProps): JSX.Element {
-  const [selectedStars, setSelectedStars] = useState(stars);
-
   const onSelectFn = readOnly
     ? () => () => null
-    : (i: number) => () => setSelectedStars(i + 1);
+    : (i: number) => () => onRate(i + 1);
 
   return (
     <div style={{ padding: '5px', ...style }}>
