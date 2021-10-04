@@ -21,6 +21,14 @@ h1 {
   flex-wrap: wrap-reverse;
 }
 
+.ratingStar {
+  color: grey;
+}
+
+.ratingStar-selected {
+  color: var(--brandSecondary);
+}
+
 .form-comment {
   display: flex;
   flex-direction: column;
@@ -59,8 +67,14 @@ h1 {
 
 #bottomSection {
   padding: 10px 40px;
+  align-content: center;
   color: var(--brandPrimary);
   background-color: #ffffff;
+}
+
+.comment-list {
+  max-width: 1000px;
+  margin: auto;
 }
 
 .comment-container {
