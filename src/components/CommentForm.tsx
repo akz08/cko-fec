@@ -1,5 +1,5 @@
 import React, { FormEvent, useState } from 'react';
-import { useComments } from '../hooks/CommentProvider';
+import { useComments } from '../providers/CommentProvider';
 import { IComment } from '../types/types';
 import StarRating from './StarRating';
 

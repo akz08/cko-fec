@@ -1,5 +1,5 @@
 import React from 'react';
-import { useComments } from '../hooks/CommentProvider';
+import { useComments } from '../providers/CommentProvider';
 import Comment from './Comment';
 
 export default function CommentList(): JSX.Element {
