@@ -1,5 +1,3 @@
-import React from 'react';
-
 export type CommentProviderProps = {
   children: JSX.Element | JSX.Element[];
 };
