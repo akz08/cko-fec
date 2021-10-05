@@ -58,14 +58,20 @@ The use of Docker and Docker Compose is fairly basic and mainly to demonstrate u
 
 The [frames-react project](https://github.com/checkout/frames-react) was used as a basic guideline for folder structure as well as use of types. The usage of hooks and providers are based on learnings from the book [Learning React, 2nd Edition](https://github.com/MoonHighway/learning-react) and Typescript tips gathered from the [React + TypeScript cheatsheet](https://github.com/typescript-cheatsheets/react).
 
-### Testing (TODO)
+### Testing
 
 #### Unit
 
+A handful of components tests were written & located in `/src/tests`. Due to time constraints, not all components/providers were tested.
+
 #### Integration
+
+An example Cypress integration test can be found at `/cypress/integration`. In this example where the providers are just returning mocked data, it doesn't quite provide much value, but added as an example of how we might write such tests.
 
 ## UI Design
 
 Design doesn't exist in a vacuum and there's no need to re-invent the wheel, so the site was styled around CKO's main page using flexbox. The layout is fairly responsive, so media queries were not used in this instance. Where possible (except for the chart), the brand colours have been "variablised" on the off-chance using those colours is frowned upon.
 
-## Next Steps (TODO)
+## Next Steps
+
+As indicated in the [approach](#approach) checklist, not all planned items were completed. The remainder of the list however is a decent description of how I would have added to the solution given the removal of the time constraints. Overall this was a pretty fun little project to jumpstart learning the React ecosystem in a weekend (and setting up a development environment in WSL2).
