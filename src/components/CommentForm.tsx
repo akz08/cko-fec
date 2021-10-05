@@ -50,10 +50,22 @@ export default function CommentForm(): JSX.Element {
     <form onSubmit={submit} className="form-comment">
       <h2>Add Comment</h2>
       <label htmlFor="formName">Name</label>
-      <input {...nameProps} id="formName" type="text" required />
+      <input
+        {...nameProps}
+        id="formName"
+        data-testid="comment_formName"
+        type="text"
+        required
+      />
 
       <label htmlFor="formEmail">Email</label>
-      <input {...emailProps} id="formEmail" type="email" required />
+      <input
+        {...emailProps}
+        id="formEmail"
+        data-testid="comment_formEmail"
+        type="email"
+        required
+      />
 
       <label htmlFor="formRating">Rating</label>
       <StarRating
@@ -64,8 +76,15 @@ export default function CommentForm(): JSX.Element {
       />
 
       <label htmlFor="formComment">Comment</label>
-      <textarea {...commentProps} id="formComment" required></textarea>
-      <button id="formSubmit">Add comment</button>
+      <textarea
+        {...commentProps}
+        id="formComment"
+        data-testid="comment_formComment"
+        required
+      ></textarea>
+      <button id="formSubmit" data-testid="comment_formSubmit">
+        Add comment
+      </button>
     </form>
   );
 }
