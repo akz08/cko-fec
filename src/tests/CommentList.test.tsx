@@ -1,6 +1,5 @@
 import { render, screen } from '@testing-library/react';
 import React from 'react';
-import { fake } from 'sinon';
 import CommentList from '../components/CommentList';
 import * as provider from '../providers/CommentProvider';
 import { CommentProps, IComment } from '../types/types';
