@@ -6,7 +6,7 @@ describe('Comment form', () => {
   it('can be submitted and updates the list', () => {
     const name = 'John Doe';
     const email = 'example@example.com';
-    const comment = 'I liked it';
+    const comment = 'I hated it';
 
     cy.get('[data-testid=comment_formName]')
       .type(name)
