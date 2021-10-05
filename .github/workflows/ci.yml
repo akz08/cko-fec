@@ -6,9 +6,11 @@ on:
   push:
     paths:
       - src/**
+      - cypress/**
   pull_request:
     paths:
       - src/**
+      - cypress/**
 
 jobs:
   build:
@@ -38,3 +40,6 @@ jobs:
 
       - name: Run unit tests
         run: yarn test
+
+      - name: Run e2e tests
+        run: yarn e2e:ci

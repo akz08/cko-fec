@@ -2,8 +2,18 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+jest.mock(
+  './components/TrendGraph',
+  () =>
+    function MockTrendGraph() {
+      return <div>mock</div>;
+    }
+);
+
+describe('App component', () => {
+  test('renders h1 element', () => {
+    render(<App />);
+    const h1Element = screen.getByText(/customer feedback/i);
+    expect(h1Element).toBeInTheDocument();
+  });
 });

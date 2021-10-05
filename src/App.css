@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+/* using css variable syntax since SASS is a pain to add unless we eject create-react-app */
+:root {
+  --brandPrimary: rgb(12, 17, 66);
+  --brandSecondary: rgb(107, 225, 230);
+  --brandLightText: rgb(255, 255, 200);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#topSection {
+  padding: 10px 40px;
+  color: var(--brandLightText);
+  background-color: var(--brandPrimary);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#topContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+}
+
+.ratingStar {
+  color: grey;
+}
+
+.ratingStar-selected {
+  color: var(--brandSecondary);
+}
+
+.form-comment {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-grow: 1;
+  min-width: 300px;
+  max-width: 400px;
+  padding: 10px 10px 10px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.form-comment input {
+  border-radius: 8px;
+  border: 1px solid #b6b8c6;
+  padding: 15px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-comment textarea {
+  border-radius: 8px;
+  border: 1px solid #b6b8c6;
+  padding: 15px 10px;
+  resize: vertical;
+  max-width: 400px;
+}
+
+.form-comment label {
+  padding: 15px 0 5px 0;
+}
+
+.form-comment #formSubmit {
+  margin: 10px 0;
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: var(--brandPrimary);
+  font-weight: 600;
+  background-color: var(--brandSecondary);
+}
+
+.chart-container {
+  position: relative;
+  width: 70vw;
+  margin: auto;
+}
+
+#bottomSection {
+  padding: 10px 40px;
+  align-content: center;
+  color: var(--brandPrimary);
+  background-color: #ffffff;
+}
+
+.comment-list {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.comment-container {
+  overflow-y: scroll;
+  height: 50vh;
+}
+
+.comment-content {
+  border: 1px solid var(--brandPrimary);
+  border-radius: 8px;
+  margin: 5px;
+  padding: 10px;
 }

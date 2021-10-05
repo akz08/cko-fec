@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import CommentProvider from './providers/CommentProvider';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <CommentProvider>
+      <App />
+    </CommentProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
