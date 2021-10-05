@@ -16,6 +16,7 @@
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
     "react-scripts": "4.0.3",
+    "start-server-and-test": "^1.14.0",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
   },
@@ -25,7 +26,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint .",
-    "e2e": "cypress run"
+    "e2e": "cypress run",
+    "e2e:ci": "start-server-and-test \"yarn start\" http://localhost:3000 \"yarn run e2e\""
   },
   "eslintConfig": {
     "extends": [
@@ -52,6 +54,7 @@
     "@typescript-eslint/parser": "^4.32.0",
     "cypress": "^8.5.0",
     "eslint": "^7.32.0",
+    "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-react-hooks": "^4.2.0"
