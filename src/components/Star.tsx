@@ -8,6 +8,7 @@ export default function Star({
 }: StarProps): JSX.Element {
   return (
     <FaStar
+      aria-label="rating star"
       className={selected ? 'ratingStar-selected' : 'ratingStar'}
       onClick={onSelect}
     />
