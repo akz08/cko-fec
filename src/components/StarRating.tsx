@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { StarRatingProps } from '../types/types';
 import Star from './Star';
 
