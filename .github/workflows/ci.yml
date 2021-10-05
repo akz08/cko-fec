@@ -38,3 +38,6 @@ jobs:
 
       - name: Run unit tests
         run: yarn test
+
+      - name: Run e2e tests
+        run: yarn e2e
