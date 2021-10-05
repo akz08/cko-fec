@@ -30,8 +30,8 @@ Learning a new framework whilst building a web application to a good-enough stan
 - [x] Draft out sensible data structure in flat JSON files
 - [x] Build out components & types using simple state
 - [x] Use Contexts and Providers to manage state more centrally
-- [ ] Figure out how unit testing works in React
-- [ ] Setup integration tests with Cypress & update CI pipeline
+- [x] Figure out how unit testing works in React
+- [x] Setup integration tests with Cypress & update CI pipeline
 - [ ] Build hook based on Fetch API & build in logging service
 - [ ] Abstract out Fetch hook into service to swap out with mock service
 - [ ] Build out mock API/service specifically for Cypress tests
