@@ -12,6 +12,8 @@ Submission for CKO Front End Challenge built in React.js, building a page to:
 
 For development, we assume `node 14.x` or higher with `yarn` installed. The editor of choice is Visual Studio Code, and a set of recommended extensions have been checked in to help streamline development. Since the project is based on an un-ejected `create-react-app`, you should be able to get started with:
 
+`yarn install`
+
 `yarn start`
 
 If you have Docker installed and just want to see the app in action, run:
